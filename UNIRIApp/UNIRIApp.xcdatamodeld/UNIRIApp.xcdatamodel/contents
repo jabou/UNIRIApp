@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8118.20" systemVersion="15A204h" minimumToolsVersion="Xcode 4.3">
+    <entity name="UserData" representedClassName="Model" syncable="YES">
+        <attribute name="chosenFaculty" optional="YES" attributeType="String" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserData" positionX="-54" positionY="-9" width="128" height="60"/>
+    </elements>
+</model>

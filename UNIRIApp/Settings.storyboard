@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bSy-Fr-V8b">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="QVI-bn-xS8">
+            <objects>
+                <viewController id="Fig-ZJ-UvA" customClass="SettingsViewController" customModule="UNIRIApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4k7-YT-5na"/>
+                        <viewControllerLayoutGuide type="bottom" id="4eH-3f-U7E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jll-uH-J8m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGE-a0-A7Q">
+                                <rect key="frame" x="0.0" y="214" width="600" height="162"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="JRm-Cl-VmB"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fig-ZJ-UvA" id="sai-Qp-XWt"/>
+                                    <outlet property="delegate" destination="Fig-ZJ-UvA" id="due-HQ-9fa"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0b-c6-sKn">
+                                <rect key="frame" x="0.0" y="384" width="600" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kKQ-ii-Qcy"/>
+                                </constraints>
+                                <state key="normal" title="POTVRDI">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="Fig-ZJ-UvA" eventType="touchUpInside" id="kqZ-0G-0JK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UniriLogoNew" translatesAutoresizingMaskIntoConstraints="NO" id="7LZ-Rv-65b">
+                                <rect key="frame" x="228" y="138" width="145" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="fQ0-Gx-xN7"/>
+                                    <constraint firstAttribute="height" constant="50" id="vod-8C-jsO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7LZ-Rv-65b" firstAttribute="centerX" secondItem="jll-uH-J8m" secondAttribute="centerX" id="Cpo-ba-lgJ"/>
+                            <constraint firstItem="jGE-a0-A7Q" firstAttribute="leading" secondItem="jll-uH-J8m" secondAttribute="leading" id="JS1-DU-s2z"/>
+                            <constraint firstItem="jGE-a0-A7Q" firstAttribute="top" secondItem="jll-uH-J8m" secondAttribute="top" constant="214" id="RV5-YQ-yMw"/>
+                            <constraint firstItem="jGE-a0-A7Q" firstAttribute="top" secondItem="7LZ-Rv-65b" secondAttribute="bottom" constant="26" id="RpA-kq-mh9"/>
+                            <constraint firstItem="P0b-c6-sKn" firstAttribute="leading" secondItem="jll-uH-J8m" secondAttribute="leading" id="fSb-PC-khv"/>
+                            <constraint firstAttribute="trailing" secondItem="jGE-a0-A7Q" secondAttribute="trailing" id="nDl-76-0Tn"/>
+                            <constraint firstAttribute="trailing" secondItem="P0b-c6-sKn" secondAttribute="trailing" id="wK1-GG-2qN"/>
+                            <constraint firstItem="P0b-c6-sKn" firstAttribute="top" secondItem="jGE-a0-A7Q" secondAttribute="bottom" constant="8" id="zFk-jT-eVt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="21h-vp-uZn">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="hlj-ZF-cX0">
+                            <connections>
+                                <action selector="cancelButton:" destination="Fig-ZJ-UvA" id="kJ0-hR-GIy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="P0b-c6-sKn" id="2t0-Kq-Jg4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypj-ih-YNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="1047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N4C-Nc-qDX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSy-Fr-V8b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CkL-4n-l8m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fig-ZJ-UvA" kind="relationship" relationship="rootViewController" id="CCC-qo-Kg9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmc-75-sQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="1047"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UniriLogoNew" width="145" height="50"/>
+    </resources>
+</document>

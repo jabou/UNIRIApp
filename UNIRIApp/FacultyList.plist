@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>- odaberi fakultet -</string>
+	<string>Akademija prim. umjetnosti</string>
+	<string>Ekonomski fakultet</string>
+	<string>Fakultet za menađ. tur i ugos.</string>
+	<string>Fakultet zdravstvenih studija</string>
+	<string>Filozofski fakultet</string>
+	<string>Građevinski fakultet</string>
+	<string>Medicinski fakultet</string>
+	<string>Pomorski fakultet</string>
+	<string>Pravni fakultet</string>
+	<string>Tehnički fakultet</string>
+	<string>Učiteljski fakultet</string>
+	<string>Odjel za biotehnologiju</string>
+	<string>Odjel za fiziku</string>
+	<string>Odjel za informatiku</string>
+	<string>Odjel za matematiku</string>
+</array>
+</plist>
