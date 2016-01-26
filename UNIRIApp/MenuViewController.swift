@@ -14,10 +14,10 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     /**********************************************************************************************************/
     //MARK: - Variable init and decl with values
     
-    let section1Values = ["Stipendije","Studentski centar","Knjižnica","Erasmus"]
-    let section1Pictures = ["Stipendije","SCentar","Knjiznice","Erasmus"]
-    let section3Values = ["Zabava","Sport","Kultura","Zdravstvena zaštita","Prijevoz"]
-    let section3Pictures = ["Zabava","Sport","Kultura","ZZastita","Prijevoz"]
+    let section1Values = ["Stipendije","Studentski centar","Knjižnica"]
+    let section1Pictures = ["Stipendije","SCentar","Knjiznice"]
+    //let section3Values = ["Zabava","Sport","Kultura","Zdravstvena zaštita","Prijevoz"]
+    //let section3Pictures = ["Zabava","Sport","Kultura","ZZastita","Prijevoz"]
     var nameFromDatabase: String!
     
     @IBOutlet weak var tableView: UITableView!
@@ -87,7 +87,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     /**********************************************************************************************************/
     //MARK: - Table View Setup
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return 2
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -96,9 +96,9 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 0:
             return section1Values.count
         case 1:
-            return section3Values.count
-        case 2:
-            return 1
+            return 1 // section3Values.count
+//        case 2:
+//            return 1
         default:
             return 0
         }
@@ -121,9 +121,9 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 0:
             headerLabel.text = "OPĆENITO"
         case 1:
-            headerLabel.text = "OSTALO"
-        case 2:
-            headerLabel.text = "POSTAVKE"
+            headerLabel.text = "POSTAVKE" //headerLabel.text = "OSTALO"
+//        case 2:
+//            headerLabel.text = "POSTAVKE"
         default:
             break
         }
@@ -150,11 +150,13 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.cellLabel.text = section1Values[indexPath.row]
             cell.cellPicture.image = UIImage(named: section1Pictures[indexPath.row])
         case 1:
-            cell.cellLabel?.text = section3Values[indexPath.row]
-            cell.cellPicture.image = UIImage(named: section3Pictures[indexPath.row])
-        case 2:
             cell.cellLabel?.text = "Promijeni fakultet"
             cell.cellPicture.image = UIImage(named: "Postavke")
+//            cell.cellLabel?.text = section3Values[indexPath.row]
+//            cell.cellPicture.image = UIImage(named: section3Pictures[indexPath.row])
+//        case 2:
+//            cell.cellLabel?.text = "Promijeni fakultet"
+//            cell.cellPicture.image = UIImage(named: "Postavke")
         default:
             break
         }
@@ -174,31 +176,34 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             case 1:
                 self.performSegueWithIdentifier("studentCenter", sender: nil)
             case 2:
-                self.performSegueWithIdentifier("detail", sender: nil)
+                self.performSegueWithIdentifier("library", sender: nil)
             case 3:
-                self.performSegueWithIdentifier("detail", sender: nil)
+                self.performSegueWithIdentifier("erasmus", sender: nil)
             default:
                 break
             }
         case 1:
-            switch indexPath.row{
-            case 0:
-                self.performSegueWithIdentifier("detail", sender: nil)
-            case 1:
-                self.performSegueWithIdentifier("detail", sender: nil)
-            case 2:
-                self.performSegueWithIdentifier("detail", sender: nil)
-            case 3:
-                self.performSegueWithIdentifier("healthCare", sender: nil)
-            case 4:
-                self.performSegueWithIdentifier("detail", sender: nil)
-            default:
-                break
-            }
-        case 2:
             if indexPath.row == 0{
                 self.performSegueWithIdentifier("settings", sender: nil)
             }
+//            switch indexPath.row{
+//            case 0:
+//                self.performSegueWithIdentifier("detail", sender: nil)
+//            case 1:
+//                self.performSegueWithIdentifier("detail", sender: nil)
+//            case 2:
+//                self.performSegueWithIdentifier("detail", sender: nil)
+//            case 3:
+//                self.performSegueWithIdentifier("healthCare", sender: nil)
+//            case 4:
+//                self.performSegueWithIdentifier("detail", sender: nil)
+//            default:
+//                break
+//            }
+//        case 2:
+//            if indexPath.row == 0{
+//                self.performSegueWithIdentifier("settings", sender: nil)
+//            }
         default:
             break
         }
@@ -212,19 +217,56 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         switch name{
             
-        case "Filozofski fakultet":
-            backgroundPicture.image = nil
-        case "Odjel za informatiku":
-            backgroundPicture.image = UIImage(named: "SveucilisniOdjeli")
-        case "Pravni fakultet":
-            backgroundPicture.image = nil
+        case "Akademija prim. umjetnosti":
+            backgroundPicture.image = UIImage(named: "AkademijaPrimjenjeneUmjetnosti")
+            
         case "Ekonomski fakultet":
-            backgroundPicture.image = nil
+            facultyName.text = "Ekonomski fakultet"
+            backgroundPicture.image = UIImage(named: "EkonomskiFakultet")
+            
+        case "Fakultet za menađ. tur i ugos.":
+            backgroundPicture.image = UIImage(named: "FakultetMenadzmentTurizam")
+            
+        case "Fakultet zdravstvenih studija":
+            backgroundPicture.image = UIImage(named: "ZdravstveniStudiji")
+            
+        case "Filozofski fakultet":
+            backgroundPicture.image = UIImage(named: "FilozofskiFakultet")
+            
+        case "Građevinski fakultet":
+            backgroundPicture.image = UIImage(named: "GradevinskiFakultet")
+            
+        case "Medicinski fakultet":
+            backgroundPicture.image = UIImage(named: "MedicinskiFakultet")
+            
+        case "Pomorski fakultet":
+            backgroundPicture.image = UIImage(named: "PomorskiFakultet")
+            
+        case "Pravni fakultet":
+            backgroundPicture.image = UIImage(named: "PravniFakultet")
+            
+        case "Tehnički fakultet":
+            backgroundPicture.image = UIImage(named: "TehnickiFakultet")
+            
         case "Učiteljski fakultet":
-            backgroundPicture.image = nil
+            backgroundPicture.image = UIImage(named: "UciteljskiFakultet")
+            
+        case "Odjel za biotehnologiju":
+            backgroundPicture.image = UIImage(named: "OdjelBiotehnologije")
+            
+        case "Odjel za fiziku":
+            backgroundPicture.image = UIImage(named: "OdjelFizike")
+            
+        case "Odjel za informatiku":
+            backgroundPicture.image = UIImage(named: "OdjelInformatike")
+            
+        case "Odjel za matematiku":
+            backgroundPicture.image = UIImage(named: "OdjelMatematike")
+            
         default:
-            break
+            print("Error with setting view data!")
         }
+
         
         
     }

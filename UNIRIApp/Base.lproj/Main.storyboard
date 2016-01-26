@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Setup View Controller-->
@@ -19,7 +19,6 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" restorationIdentifier="collagePicker" translatesAutoresizingMaskIntoConstraints="NO" id="8bf-gR-I9z">
                                 <rect key="frame" x="0.0" y="219" width="600" height="162"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="cMJ-Cx-5e4"/>
                                     <constraint firstAttribute="width" constant="600" id="mop-Kr-sQU"/>
@@ -31,7 +30,6 @@
                             </pickerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UniriLogoNew" translatesAutoresizingMaskIntoConstraints="NO" id="d3C-0t-RMa">
                                 <rect key="frame" x="231" y="143" width="145" height="50"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="6nU-9E-kcy"/>
                                     <constraint firstAttribute="height" constant="50" id="mFX-0O-1L9"/>
@@ -39,7 +37,6 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh9-MM-LZy">
                                 <rect key="frame" x="251" y="389" width="105" height="30"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fb2-ea-j8w"/>
                                     <constraint firstAttribute="width" constant="105" id="nvq-Jm-Sdf"/>
@@ -52,7 +49,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="8bf-gR-I9z" secondAttribute="centerY" id="Hss-Lq-6Iv"/>
@@ -82,7 +78,6 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
@@ -91,7 +86,7 @@
                         <segue destination="LwB-14-zS7" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="TsB-PR-QHX"/>
                         <segue destination="OGh-zq-TRf" kind="custom" identifier="sw_front_2" customClass="SWRevealViewControllerSeguePushController" id="5Q9-ic-ew5"/>
                         <segue destination="7WM-kE-uZW" kind="custom" identifier="sw_front_3" customClass="SWRevealViewControllerSeguePushController" id="tzs-Wk-HJO"/>
-                        <segue destination="hNq-ZX-ZHQ" kind="custom" identifier="sw_front_9" customClass="SWRevealViewControllerSegueSetController" id="K5i-lQ-8sw"/>
+                        <segue destination="Mtd-7n-Mpa" kind="custom" identifier="sw_front_4" customClass="SWRevealViewControllerSegueSetController" id="prb-Cy-HTX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -112,7 +107,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.74999999999999978" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xam-XC-5vQ">
                                 <rect key="frame" x="0.0" y="0.0" width="260" height="175"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="GH4-ic-dgR"/>
@@ -121,7 +115,6 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DKz-O1-2MJ">
                                 <rect key="frame" x="16" y="88" width="50" height="50"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="bR6-Nn-KJN"/>
@@ -130,7 +123,6 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlr-WH-Sz6">
                                 <rect key="frame" x="16" y="146" width="229" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5pr-jW-pam"/>
                                     <constraint firstAttribute="width" constant="229" id="Hyt-xH-x8A"/>
@@ -141,7 +133,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-N7-Hac">
                                 <rect key="frame" x="0.0" y="0.0" width="260" height="175"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="eZ2-lc-dvQ"/>
                                     <constraint firstAttribute="height" constant="175" id="n0T-F9-iAS"/>
@@ -155,7 +146,6 @@
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="twM-jS-da7">
                                 <rect key="frame" x="0.0" y="175" width="260" height="425"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="I1T-wl-JXw"/>
@@ -163,7 +153,7 @@
                                 <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuCell" id="mB3-al-pmp" customClass="CustomTableViewCell" customModule="UNIRIApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="260" height="44"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="260" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mB3-al-pmp" id="wpe-hb-rQz">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="44"/>
@@ -171,21 +161,17 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Iu-d8-rzz">
                                                     <rect key="frame" x="20" y="12" width="20" height="20"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cte-M3-DcJ">
                                                     <rect key="frame" x="55" y="12" width="205" height="20"/>
-                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="cellLabel" destination="cte-M3-DcJ" id="KXR-bH-zNZ"/>
@@ -195,7 +181,6 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Xam-XC-5vQ" firstAttribute="leading" secondItem="Oxw-LM-Nta" secondAttribute="leading" id="3hp-3d-l2O"/>
@@ -220,7 +205,7 @@
                         <segue destination="OGh-zq-TRf" kind="custom" identifier="scholarship" customClass="SWRevealViewControllerSeguePushController" id="DBW-3D-CSd"/>
                         <segue destination="7WM-kE-uZW" kind="custom" identifier="studentCenter" customClass="SWRevealViewControllerSeguePushController" id="ndr-OJ-3oM"/>
                         <segue destination="McU-so-kjc" kind="showDetail" identifier="settings" id="JM2-53-S1T"/>
-                        <segue destination="hNq-ZX-ZHQ" kind="custom" identifier="healthCare" customClass="SWRevealViewControllerSeguePushController" id="Nkn-iH-IkZ"/>
+                        <segue destination="Mtd-7n-Mpa" kind="custom" identifier="library" customClass="SWRevealViewControllerSeguePushController" id="Fjw-Nk-XAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H9b-eh-6rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -241,7 +226,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFC-np-oCX">
                                 <rect key="frame" x="0.0" y="289" width="600" height="21"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="az8-LH-X9l"/>
                                 </constraints>
@@ -250,7 +234,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="OFC-np-oCX" secondAttribute="trailing" id="25R-L9-8xy"/>
@@ -278,7 +261,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hme-b3-CQA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -295,7 +277,7 @@
                 <viewControllerPlaceholder storyboardName="HomeScreen" id="LwB-14-zS7" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uT-fL-tgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1633" y="-25"/>
+            <point key="canvasLocation" x="1505" y="167"/>
         </scene>
         <!--Schoolarship-->
         <scene sceneID="Y87-ks-kBn">
@@ -303,7 +285,7 @@
                 <viewControllerPlaceholder storyboardName="Schoolarship" id="OGh-zq-TRf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQT-W7-AQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1634" y="13"/>
+            <point key="canvasLocation" x="1506" y="205"/>
         </scene>
         <!--StudentCenter-->
         <scene sceneID="giF-dN-2Fd">
@@ -311,7 +293,7 @@
                 <viewControllerPlaceholder storyboardName="StudentCenter" id="7WM-kE-uZW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DVY-JM-ww0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="49"/>
+            <point key="canvasLocation" x="1511" y="241"/>
         </scene>
         <!--Settings-->
         <scene sceneID="t4d-Zg-75J">
@@ -319,15 +301,15 @@
                 <viewControllerPlaceholder storyboardName="Settings" id="McU-so-kjc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bod-FM-BsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1619.5" y="547"/>
+            <point key="canvasLocation" x="1491.5" y="317"/>
         </scene>
-        <!--Health-->
-        <scene sceneID="VQv-Dg-6lW">
+        <!--Library-->
+        <scene sceneID="vep-ol-np7">
             <objects>
-                <viewControllerPlaceholder storyboardName="Health" id="hNq-ZX-ZHQ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LLk-rX-A9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Library" id="Mtd-7n-Mpa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Pl-G4-bD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614" y="323"/>
+            <point key="canvasLocation" x="1488" y="277"/>
         </scene>
     </scenes>
     <resources>
@@ -336,10 +318,10 @@
         <image name="UniriLogoNew" width="145" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nkn-iH-IkZ"/>
         <segue reference="DBW-3D-CSd"/>
-        <segue reference="igz-au-N2y"/>
-        <segue reference="oEU-UF-goS"/>
         <segue reference="ndr-OJ-3oM"/>
+        <segue reference="oEU-UF-goS"/>
+        <segue reference="Fjw-Nk-XAp"/>
+        <segue reference="igz-au-N2y"/>
     </inferredMetricsTieBreakers>
 </document>
