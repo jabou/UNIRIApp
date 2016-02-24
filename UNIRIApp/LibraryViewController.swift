@@ -50,22 +50,41 @@ class LibraryViewController: UIViewController {
      //MARK: - Button actions
     
     @IBAction func navigationStart(sender: AnyObject) {
+        
+        let address = self.libraryAdress.text?.stringByReplacingOccurrencesOfString(" ", withString: "+") as String!
+        let filteredAddress = address.stringByFoldingWithOptions(NSStringCompareOptions.DiacriticInsensitiveSearch, locale: NSLocale.currentLocale())
+        
+        let url = "http://maps.apple.com/?address=\(filteredAddress),Rijeka,Croatia"
+        
         let navigationAlert: UIAlertController = UIAlertController(title: "Pokretanje navigacije", message: "Želiš li pokrenuti navigaciju do:\n \(libraryAdress.text!)", preferredStyle: UIAlertControllerStyle.Alert)
-        navigationAlert.addAction(UIAlertAction(title: "Da", style: UIAlertActionStyle.Default, handler: nil))
+        navigationAlert.addAction(UIAlertAction(title: "Da", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            UIApplication.sharedApplication().openURL(NSURL(string: url)!)
+        }))
         navigationAlert.addAction(UIAlertAction(title: "Ne", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(navigationAlert, animated: true, completion: nil)
+    
     }
     
     @IBAction func phoneCall(sender: AnyObject) {
-        let navigationAlert: UIAlertController = UIAlertController(title: "Uspostava poziva", message: "Želiš li nazvati broj: \n \(libraryTelephoneNumber.text!)", preferredStyle: UIAlertControllerStyle.Alert)
-        navigationAlert.addAction(UIAlertAction(title: "Da", style: UIAlertActionStyle.Default, handler: nil))
+        
+        let number = libraryTelephoneNumber.text!
+        
+        let navigationAlert: UIAlertController = UIAlertController(title: "Uspostava poziva", message: "Želiš li nazvati broj: \n \(number)", preferredStyle: UIAlertControllerStyle.Alert)
+        navigationAlert.addAction(UIAlertAction(title: "Da", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(number)")!)
+        }))
         navigationAlert.addAction(UIAlertAction(title: "Ne", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(navigationAlert, animated: true, completion: nil)
     }
     
     @IBAction func mailSend(sender: AnyObject) {
-        let navigationAlert: UIAlertController = UIAlertController(title: "Slanje e-mail poruke", message: "Želiš li poslati e-mail na:\n \(libraryEmail.text!)", preferredStyle: UIAlertControllerStyle.Alert)
-        navigationAlert.addAction(UIAlertAction(title: "Da", style: UIAlertActionStyle.Default, handler: nil))
+        
+        let mail = libraryEmail.text!
+
+        let navigationAlert: UIAlertController = UIAlertController(title: "Slanje e-mail poruke", message: "Želiš li poslati e-mail na:\n \(mail)", preferredStyle: UIAlertControllerStyle.Alert)
+        navigationAlert.addAction(UIAlertAction(title: "Da", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+            UIApplication.sharedApplication().openURL(NSURL(string: "mailto:\(mail)")!)
+        }))
         navigationAlert.addAction(UIAlertAction(title: "Ne", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(navigationAlert, animated: true, completion: nil)
     }
