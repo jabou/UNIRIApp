@@ -1,6 +1,7 @@
 # UNIRIApp
 
-Službena aplikacija Sveučilišta u Rijeci.
+Projekt nastao u sklopu predmeta: Programsko inženjerstvo
+Opis: UNIRIApp je jednostavna aplikacija preko koje korisnik može saznati osnovne informacije o svom fakultetu, te informacije vezane uz smješta, dom, prehranu, knjižnicu, stipendije, te studentske poslove.
 
 ##Verzija 1.0
 U početnoj verziji, aplikacija izlazi sa podrškom za:
