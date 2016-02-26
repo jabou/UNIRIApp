@@ -2,7 +2,7 @@
 //  ScholarshipViewController.swift
 //  UNIRIApp
 //
-//  Created by Jasmin Abou Aldan on 09/07/15.
+//  Created by Jasmin Abou Aldan on 14/11/2015.
 //  Copyright (c) 2015 Jasmin Abou Aldan. All rights reserved.
 //
 

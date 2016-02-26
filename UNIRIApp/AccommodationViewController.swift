@@ -2,7 +2,7 @@
 //  AccommodationViewController.swift
 //  UNIRIApp
 //
-//  Created by Jasmin Abou Aldan on 19/07/15.
+//  Created by Jasmin Abou Aldan on 26/11/2015.
 //  Copyright (c) 2015 Jasmin Abou Aldan. All rights reserved.
 //
 
