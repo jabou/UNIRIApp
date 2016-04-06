@@ -9,6 +9,7 @@
 <img src="/Screenshots/Screenshot1.png">
 
 </div>
+![alt text](screenshots/Screenshot2.png "Test")
 
 ##Version 1.0
 In this version, app has support for:
