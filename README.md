@@ -6,7 +6,8 @@
 
 ##Screenshots
 <div align="center">
-![Settings Window](https://raw.github.com/jabou/UNIRIAPP-iOS/master/Screenshots/Screenshot1.png)
+<img src="/Screenshots/Screenshot1.png">
+
 </div>
 
 ##Version 1.0
