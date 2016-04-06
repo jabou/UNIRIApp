@@ -6,7 +6,7 @@
 
 ##Screenshots
 <p align="center">
-![Alt text](/Screenshots/Screenshot1.png?raw=true "Optional Title")
+[![Alt text](/Screenshots/Screenshot1.png?raw=true "Optional Title")]
 </p>
 ##Version 1.0
 In this version, app has support for:
