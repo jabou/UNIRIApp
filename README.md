@@ -1,7 +1,7 @@
 # UNIRIApp
 
 <b>iOS developer:</b> Abou Aldan Jasmin <br>
-<b>Project was developed as part of:</b> Final exam on the subject <i>Software engineering</i><br>
+<b>Project was developed as part of:</b> Final exam on the subject <i>Software engineering</i>(Rijeka, 2016)<br>
 <b>Description:</b> UNIRIApp is a simple application through which the user can find basic information about their faculty and information related to student accommodation, dorm, food, library, scholarships and student works.
 
 ##Screenshots
