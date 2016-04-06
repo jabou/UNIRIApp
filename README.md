@@ -6,7 +6,7 @@
 
 ##Screenshots
 <p align="center">
-[![Alt text](/Screenshots/Screenshot1.png?raw=true "Optional Title")]
+![Settings Window](https://raw.github.com/jabou/UNIRIAPP-iOS/master/Screenshots/Screenshot1.png)
 </p>
 ##Version 1.0
 In this version, app has support for:
